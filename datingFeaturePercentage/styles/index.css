@@ -1,0 +1,29 @@
+img {}
+
+body {
+    display: grid;
+}
+
+article {
+    box-shadow: 1px 1px 6px 0px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+article:nth-of-type(1) {
+    margin-top: 1.5em;
+}
+
+footer {
+    font-size: 3em;
+    display: flex;
+}
+
+footer p {
+    padding: 1em;
+}
+
+footer p:nth-child(3) {
+    position: absolute;
+    right: 50px;
+}
