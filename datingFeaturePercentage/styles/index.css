@@ -1,4 +1,4 @@
-img {}
+img {
 
 body {
     display: grid;
@@ -20,10 +20,15 @@ footer {
 }
 
 footer p {
-    padding: 1em;
+    margin: 1em;
 }
 
 footer p:nth-child(3) {
     position: absolute;
     right: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }

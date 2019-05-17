@@ -1,19 +1,19 @@
 {
-  "name": "datingpackage",
-  "version": "1.0.0",
-  "description": "Dating percentage feature",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
+    "name": "beerdatingpackage",
+    "version": "1.0.0",
+    "description": "Dating percentage feature",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
     "Dating",
     "Percentage",
     "Mathbased"
   ],
-  "author": "Wouter Bijnsdorp",
-  "license": "ISC",
-  "dependencies": {
-    "lodash": "^4.17.11"
-  }
+    "author": "Wouter Bijnsdorp",
+    "license": "ISC",
+    "dependencies": {
+        "lodash": "^4.17.11"
+    }
 }
