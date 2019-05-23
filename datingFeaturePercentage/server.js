@@ -38,12 +38,13 @@ function login(req, res) {
 
     res.send(doc)
 }
+
 function notFound(req, res) {
-  var doc = '<!doctype html>'
+    var doc = '<!doctype html>'
 
-  doc += '<title>Not found</title>'
-  doc += '<h1>Not found</h1>'
-  doc += '<p>Uh oh! We couldn’t find this page!</p>'
+    doc += '<title>Not found</title>'
+    doc += '<h1>Not found</h1>'
+    doc += '<p>Uh oh! We couldn’t find this page!</p>'
 
-  res.status(404).send(doc)
+    res.status(404).send(doc)
 }
