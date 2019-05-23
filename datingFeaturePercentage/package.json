@@ -2,20 +2,23 @@
     "name": "beerdatingpackage",
     "version": "1.0.0",
     "description": "Dating percentage feature",
-    "main": "index.js",
+    "main": "server.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "node server.js"
     },
     "keywords": [
-    "Dating",
-    "Percentage",
-    "Mathbased"
-  ],
+        "Dating",
+        "Percentage",
+        "Mathbased"
+    ],
     "author": "Wouter Bijnsdorp",
     "license": "ISC",
     "dependencies": {
-        "lodash": "^4.17.11",
-        "express": "^4.16.2",
-        "ejs": "^2.5.7"
+        "ejs": "^2.5.7",
+        "express": "^4.17.0",
+        "lodash": "^4.17.11"
+    },
+    "devDependencies": {
+        "nodemon": "^1.19.0"
     }
 }

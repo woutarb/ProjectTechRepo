@@ -4,6 +4,8 @@ var express = require('express')
 
 var data = []
 
+console.log('Server is running! port:', 8000)
+
 express()
     .get('/', test)
     .get('/about', about)
