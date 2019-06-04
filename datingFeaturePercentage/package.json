@@ -4,7 +4,7 @@
     "description": "Dating percentage feature",
     "main": "server.js",
     "scripts": {
-        "start": "node server.js"
+        "start": "nodemon server.js"
     },
     "keywords": [
         "Dating",
