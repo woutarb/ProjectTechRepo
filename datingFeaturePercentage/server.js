@@ -1,14 +1,25 @@
 var express = require('express');
+var app = express();
 
 var data = [];
 
 console.log('Server is running! port:', 8000);
 
-
-express()
+app
 	.use(express.static('static'))
+	.get('/', config)
+    .use('/home', home)
     .use(notFound)
+	.set('view engine', 'ejs')
+	.set('views', 'views')
     .listen(8000);
+
+function config(req,res){
+	res.render('config');
+}
+function home(req,res){
+	res.render('index');
+}
 
 function notFound(req, res) {
     var doc = '<!doctype html>';

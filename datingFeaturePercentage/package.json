@@ -14,8 +14,8 @@
     "author": "Wouter Bijnsdorp",
     "license": "ISC",
     "dependencies": {
-        "ejs": "^2.5.7",
-        "express": "^4.17.0",
+        "ejs": "^2.6.1",
+        "express": "^4.17.1",
         "lodash": "^4.17.11"
     },
     "devDependencies": {
