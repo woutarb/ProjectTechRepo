@@ -15,8 +15,11 @@ input[type="checkbox"]{
 	width: 3em;
 }
 input[type="submit"]{
-	height: 4em;
+	height: 3em;
 	width: 6em;
 	width: 50%;
-	margin: 10%
+	margin: 10%;
+	background-color: #f9b400;
+	color: white;
+	font-size: 2em;
 }
