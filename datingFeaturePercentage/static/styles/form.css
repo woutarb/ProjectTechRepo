@@ -1,3 +1,22 @@
 form{
-	
+	margin-top: 8em;
+	position: absolute;
+	width: 100%;
+}
+label{
+	padding-top: 1em;
+	display: inline-block;
+	font-size: 3em;
+	width: 80%;
+	padding-left: 2em;
+}
+input[type="checkbox"]{
+	height: 3em;
+	width: 3em;
+}
+input[type="submit"]{
+	height: 4em;
+	width: 6em;
+	width: 50%;
+	margin: 10%
 }

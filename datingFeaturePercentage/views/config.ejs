@@ -2,48 +2,46 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>OKBier</title>
-    <meta name="description" content="The config page for OKBeer.">
-    <link rel="stylesheet" href="styles/main.css">
+	<% include partials/head %>
 </head>
 
-<body>
-    <header>
-        <a href=""><img src="images/chats.svg" alt="Chats"></a>
-        <a href="index.html"><img src="images/logo.svg" alt="OKBier"></a>
-        <a href=""><img src="images/profielicon.svg" alt="Profiel"></a>
-    </header>
-    <main>
-		<form> 
-			<label for='pk'>Pauwel Kwak</label>
-			<input type='checkbox' name='beerPreference' value='pauwelKwak' id='pk'>
-			
-			<label for='kt'>Tripel Karmeliet</label>
-			<input type='checkbox' name='beerPreference' value='tripelKarmeliet' id='tk'>
-			
-			<label for='ts'>Texels Skuumkoppe</label>
-			<input type='checkbox' name='beerPreference' value='texelsSkuumkoppe' id='ts'>
-			
-			<label for='ew'>Erdinger Weissbier</label>
-			<input type='checkbox' name='beerPreference' value='erdingerWeissbier' id='ew'>
-			
-			<label for='kb'>Kasteelbier Bruin</label>
-			<input type='checkbox' name='beerPreference' value='kasteelbierBruin' id='kb'>
-			
-			<label for='wt'>Westmalle Tripel</label>
-			<input type='checkbox' name='beerPreference' value='westmalleTripel' id='wt'>
-			
-			<label for='vb'>Vedett Extra Blond</label>
-			<input type='checkbox' name='beerPreference' value='vedettExtraBlond' id='vb'>
-			
-			<label for='gg'>Gulpener Gladiator</label>
-			<input type='checkbox' name='beerPreference' value='gulpenerGladiator' id='gg'>
-			
-			<label for='bz'>Brugse Zot Blond</label>
-			<input type='checkbox' name='beerPreference' value='brugseZotBlond' id='bz'>
-		</form>
-    </main>
-</body>
+	<body>
+		<header>
+			<% include partials/header %>
+			<link rel="stylesheet" href="styles/form.css" type="text/css">
+		</header>
+		<main>
+			<form> 
+				<label for='pk'>Pauwel Kwak</label>
+				<input type='checkbox' name='beerPreference' value='pauwelKwak' id='pk'>
+
+				<label for='kt'>Tripel Karmeliet</label>
+				<input type='checkbox' name='beerPreference' value='tripelKarmeliet' id='tk'>
+
+				<label for='ts'>Texels Skuumkoppe</label>
+				<input type='checkbox' name='beerPreference' value='texelsSkuumkoppe' id='ts'>
+
+				<label for='ew'>Erdinger Weissbier</label>
+				<input type='checkbox' name='beerPreference' value='erdingerWeissbier' id='ew'>
+
+				<label for='kb'>Kasteelbier Bruin</label>
+				<input type='checkbox' name='beerPreference' value='kasteelbierBruin' id='kb'>
+
+				<label for='wt'>Westmalle Tripel</label>
+				<input type='checkbox' name='beerPreference' value='westmalleTripel' id='wt'>
+
+				<label for='vb'>Vedett Extra Blond</label>
+				<input type='checkbox' name='beerPreference' value='vedettExtraBlond' id='vb'>
+
+				<label for='gg'>Gulpener Gladiator</label>
+				<input type='checkbox' name='beerPreference' value='gulpenerGladiator' id='gg'>
+
+				<label for='bz'>Brugse Zot Blond</label>
+				<input type='checkbox' name='beerPreference' value='brugseZotBlond' id='bz'>
+				
+				<input type='submit'>
+			</form>
+		</main>
+	</body>
 
 </html>

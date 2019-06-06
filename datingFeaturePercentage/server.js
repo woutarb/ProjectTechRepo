@@ -1,22 +1,24 @@
 var express = require('express');
+let path = require('path');
 var app = express();
 
-var data = [];
+
 
 console.log('Server is running! port:', 8000);
 
 app
 	.use(express.static('static'))
-	.get('/', config)
-    .use('/home', home)
-    .use(notFound)
 	.set('view engine', 'ejs')
 	.set('views', 'views')
+	.get('/',config)
+	.get('/home',home)
+    .use(notFound)
     .listen(8000);
 
 function config(req,res){
 	res.render('config');
 }
+
 function home(req,res){
 	res.render('index');
 }
@@ -28,3 +30,4 @@ function notFound(req, res) {
     doc += '<p>Uh oh! We couldn’t find this page!</p>';
     res.status(404).send(doc);
 }
+
