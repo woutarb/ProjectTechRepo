@@ -5,11 +5,20 @@
 <!--
 			<p>name</p>
 			<p>leeftijd</p>
-			<p><%# match %>%</p>
+
 -->
+<!--						<p><%# match %>%</p>-->
 			
 			<ul> 
-			<% database.forEach(function())
+			<% userId.forEach(function(Users){%>
+				<%# userData.forEach(function(Entry){%>
+				
+				<%# }); %>
+				<%- userId[Users].Name %>
+				
+				<%= match %>
+				
+			<% }); %>
 			
 			</ul>
 		</footer>

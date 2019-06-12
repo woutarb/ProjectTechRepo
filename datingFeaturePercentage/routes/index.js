@@ -4,7 +4,7 @@ var router = express.Router();
 
 //Variable declerations
 var database = {
-	Users : {
+	User1 : {
 		Name: "Henk",
 		Age: 20,
 		Preferences: ["heiniken", "amstel", "hertogjan"],
@@ -25,9 +25,13 @@ router.get('/', function(req, res){
 
 
 router.get('/index', function(req, res){
+	console.log("YO");
 	res.render('index', {
-		match: "50"
+		userId: Object.keys(database),		
+		match: "LOL"
 	});
+	console.log(database['User1'].Name);
+
 });
 
 
