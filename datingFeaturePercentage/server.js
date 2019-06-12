@@ -1,28 +1,35 @@
+// importing depencies
 var express = require('express');
 var path = require('path');
+var bodyParser = require('body-parser');
 var app = express();
 
-
-
 console.log('Server is running! port:', 8000);
+
+var indexRoute = require('./routes/index');
+
+// assigning express dependencies
+app
+	.use(bodyParser.json())
+	.use(bodyParser.urlencoded({extended: false}))
+	.use(express.json())
+	.use(express.urlencoded({extended: false}));
+
 
 app
 	.use(express.static('static'))
 	.set('view engine', 'ejs')
 	.set('views', 'views')
-	.get('/',config)
-	.get('/home',home)
+// assigning the routes
+	.use('/', indexRoute)
+//Error handeling
     .use(notFound)
     .listen(8000);
 
-function config(req,res){
-	res.render('config');
-}
 
-function home(req,res){
-	res.render('index');
-}
 
+
+//error handeling, when the page is not found
 function notFound(req, res) {
     var doc = '<!doctype html>';
     doc += '<title>Not found</title>';
