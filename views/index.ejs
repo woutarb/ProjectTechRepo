@@ -9,7 +9,22 @@
 	<body>
 		<% include partials/header %>
 		<main>
-			<% include partials/card %>
+			<% users.forEach(function(user){%>
+			<article>
+				<a href="index.html ">
+					<img src="/images/proefAfbeelding.svg" alt="Foto van gebruiker">
+					<footer>
+
+						<ul> 
+							<li><%= user.name %>
+							<%= user.age %>
+							<%= user.match %></li>
+
+						</ul>
+					</footer>
+				</a>
+			</article>	
+			<% }); %>
 		</main>
 	</body>
 

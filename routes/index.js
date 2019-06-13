@@ -3,20 +3,20 @@ var express = require('express');
 var router = express.Router();
 
 //Variable declerations
-var database = {
-	User1 : {
-		Name: "Henk",
-		Age: 20,
-		Preferences: ["heiniken", "amstel", "hertogjan"],
-		Image: "images/lol.png"
+var database = [
+	{
+		name: "Henk",
+		age: 20,
+		preferences: ["heiniken", "amstel", "hertogjan"],
+		image: "images/lol.png"
 	},
-	User2 : {
-		Name: "Jan",
-		Age: 22,
-		Preferences: ["klok", "amstel", "hertogjan"],
-		Image: "images/xd.png"
+	{
+		name: "Jan",
+		age: 22,
+		preferences: ["klok", "amstel", "hertogjan"],
+		image: "images/xd.png"
 	}	
-};
+];
 
 
 router.get('/', function(req, res){
@@ -25,12 +25,15 @@ router.get('/', function(req, res){
 
 
 router.get('/index', function(req, res){
-	console.log("YO");
 	res.render('index', {
-		userId: Object.keys(database),		
-		match: "LOL"
+		users: database,	
+//		name: database['User1'].Name,
+//		age: database['User1'].Age,
+//		match: "LOL"
 	});
-	console.log(database['User1'].Name);
+//	console.log(database['User1'].Name);
+//	console.log(database['User2'].Name);
+//	console.log(Object.keys(database).length);
 
 });
 
