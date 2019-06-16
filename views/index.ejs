@@ -7,25 +7,15 @@
 	</head>
 
 	<body>
-		<% include partials/header %>
+		<header>
+			<% include partials/header %>
+		</header>
 		<main>
-			<% users.forEach(function(user){%>
-			<article>
-				<a href="index.html ">
-					<img src="/images/proefAfbeelding.svg" alt="Foto van gebruiker">
-					<footer>
-
-						<ul> 
-							<li><%= user.name %>
-							<%= user.age %>
-							<%= user.match %></li>
-
-						</ul>
-					</footer>
-				</a>
-			</article>	
+			<% users.forEach(function(user){ %>
+				<% include partials/card %>
 			<% }); %>
 		</main>
+		<script src="../scripts/cardScript.js"></script>
 	</body>
 
 </html>

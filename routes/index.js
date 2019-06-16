@@ -2,7 +2,7 @@
 var express = require('express');
 var router = express.Router();
 
-//Variable declerations
+// variable declerations
 var database = [
 	{
 		name: "Henk",
@@ -18,7 +18,6 @@ var database = [
 	}	
 ];
 
-
 router.get('/', function(req, res){
 	res.render('config');
 });
@@ -27,14 +26,7 @@ router.get('/', function(req, res){
 router.get('/index', function(req, res){
 	res.render('index', {
 		users: database,	
-//		name: database['User1'].Name,
-//		age: database['User1'].Age,
-//		match: "LOL"
 	});
-//	console.log(database['User1'].Name);
-//	console.log(database['User2'].Name);
-//	console.log(Object.keys(database).length);
-
 });
 
 
