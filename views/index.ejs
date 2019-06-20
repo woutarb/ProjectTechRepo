@@ -2,7 +2,10 @@
 <html>
 
 	<head>
-		<% include partials/head %>
+		<meta charset="utf-8">
+		<title>Home</title>
+		<meta name="description" content="omschrijving"The homepage for OKBeer>
+		<link rel="stylesheet" href="styles/main.css" type="text/css">
 		<link rel="stylesheet" href="/styles/index.css">
 	</head>
 
@@ -12,10 +15,19 @@
 		</header>
 		<main>
 			<% users.forEach(function(user){ %>
-				<% include partials/card %>
+			<article>
+				<a href="">
+					<header class="articleHeader one"><button><img src="<%= user.matchIcon %>" alt="matching percentage with this person"></button></header>
+					<img src="/images/proefAfbeelding.svg" alt="Foto van gebruiker">
+					<footer>
+						<p class="invis"><%= user.name %></p>
+						<p class="invis"><%= user.age %></p>
+						<p class="invis"><%= user.matchAmount %></p>
+					</footer>
+				</a>
+			</article>			
 			<% }); %>
 		</main>
-		<script src="../scripts/cardScript.js"></script>
 	</body>
 
 </html>
