@@ -18,31 +18,41 @@ article {
     box-shadow: 1px 1px 6px 0px;
     text-align: center;
     margin: 1em;
-	height: 65vh;
+	height: 66vh;
 }
 
 article:nth-of-type(1) {
     margin-top: 8em;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+header p{
+	display: inline;
+	font-size: 3em;
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
 footer {
-    font-size: 1.5em;
+    font-size: 2em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 90%;
 }
 
 footer p {
     margin: 1em;
 }
 
-.invis{
-	display: none;
+footer p:nth-child(2){
+	right: 5em;
 }
 
+.invis footer{
+	display: none;
+}
+.invis{
+	height: 63vh;
+}
+.one p:nth-child(2){
+	display: none;
+}
